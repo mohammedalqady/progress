@@ -8,9 +8,9 @@ import Foter from './components/foter/Foter';
 import CartPage from './pages/cart/CartPage';
 import { ProductProvider } from './hooks/CreateContext';
 import ProductDetailsPage from './pages/product/ProductDetailsPage';
-import Register from './components/register/Register';
 import ContactPage from './pages/contact/ContactPage';
 import AboutPage from './pages/about/AboutPage';
+import SignIn from './components/register/SignIn';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
   useEffect (() => {
     setTimeout (() => {
       setLoding (false)
-    }, 2000);
+    }, 700);
   },[])
   return ( 
     <>
@@ -38,7 +38,7 @@ function App() {
         <NavBarLogIn />
         <Routes>
           <Route path="/" index element={<HomePage />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/signin" element={<SignIn />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />

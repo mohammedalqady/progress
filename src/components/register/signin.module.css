@@ -1,0 +1,46 @@
+.conta{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 50px;
+    height: 100vh;
+    /* margin: auto; */
+}
+
+.layout{
+    width: 50%;
+    text-align: center;
+    /* margin-left: 100px; */
+}
+
+.d1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin: 10px;
+}
+
+.mercado{
+    font-size: 30px;
+    padding-top: 18px;
+}
+
+.welcom{
+    font-size: 35px;
+    color: #f44321; 
+    font-weight: bold;
+}
+
+.acess{
+    color: #aeadad;
+}
+
+
+
+.im{
+    /* display: flex; */
+    /* margin: auto; */
+    width: 70%;
+}
