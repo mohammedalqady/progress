@@ -17,13 +17,18 @@ const SignIn = () => {
 
         <p className={style.acess}>Access Your Personal account by logging in</p>
 
-        <div >hello</div>
-        <div >hello</div>
-        <div >hello</div>
-        <div >hello</div>
-        <div >hello</div>
-        <div >hello</div>
-        <div >hello</div>
+        <div className={style.dinp1}>
+          <input type="text" placeholder="enter your email or username" className={style.input} />
+        </div>
+        
+        <div className={style.dinp2}>
+          <input type="text" placeholder="enter your email or username" className={style.input} />
+        </div>
+        
+        <div className={style.dinp3}>
+          <input type="text" placeholder="enter your email or username" className={style.input} />
+        </div>
+
       </div>
 
       

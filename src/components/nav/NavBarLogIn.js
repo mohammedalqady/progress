@@ -7,7 +7,7 @@ import icon3 from "../../assets/6.png"
 import icon4 from "../../assets/emojione_flag-for-egypt.png"
 import iconSearch from "../../assets/Symbol.png"
 import { IoIosArrowDown } from "react-icons/io";
-import { FaStore } from "react-icons/fa6";
+import logo from "../../assets/sign-up/Group 2.png"
 import { RiMapPinLine } from "react-icons/ri";
 
 // import { MdOutlineShoppingCart } from "react-icons/md";
@@ -35,7 +35,6 @@ const NavBarLogIn = () => {
       <div className={style.row1}>
 
         <div className={style.part1}>
-          
           <div className={style.el1}>
             <img className={style.icon1} src={icon1} alt=''/>
             <p className={style.r1p}>Sell On Mercado</p>
@@ -49,15 +48,15 @@ const NavBarLogIn = () => {
             <p className={style.r1p}>Recently Viewed</p>
           </div>
         </div>
+
         <div className={style.part2}>
           <div className={style.el4}>
-            <p>EGP</p>
+            <p className={style.r1p}>EGP</p>
             <IoIosArrowDown className={style.arro1}/>
-            
           </div>
           <div className={style.el5}>
          <img className={style.icon4} src={icon4} alt=''/>
-            <p>ENG</p>
+            <p className={style.r1p}>ENG</p>
             <IoIosArrowDown className={style.arro2} />
           </div>
         </div>
@@ -69,7 +68,8 @@ const NavBarLogIn = () => {
 
         <div className={style.r2d1}>
           <Link to='/'>
-          <FaStore className={style.r2icon} />
+          <img className={style.r2icon} src={logo} alt="" />
+          {/* <FaStore className={style.r2icon} /> */}
           </Link>
 
           <Link className={style.linkhome} to='/'>
@@ -79,17 +79,21 @@ const NavBarLogIn = () => {
 
         <div className={style.r2d2}>
           <>
-          <p>Demos</p>
+          <p className={style.r1p}>Demos</p>
           <IoIosArrowDown className={style.arro3}/>
           </>
           <>
-          <p>Products</p>
+          <p className={style.r1p}>Products</p>
           <IoIosArrowDown className={style.arro3}/>
           </>
           
-          <Link to='/contact' className={style.content}><p>Contact</p></Link>
+          <Link to='/contact' className={style.content}>
+          <p className={style.r1p}>Contact</p>
+          </Link>
           
-          <Link to='/about' className={style.about}><p>About</p></Link>
+          <Link to='/about' className={style.about}>
+          <p className={style.r1p}>About</p>
+          </Link>
 
         </div>
 
@@ -110,7 +114,7 @@ const NavBarLogIn = () => {
 
         <div className={style.r2d4}>
           <div className={style.diliver}>
-            <RiMapPinLine className={style.dilvericon} />
+            <RiMapPinLine className={style.dilvericon1} />
             <p className={style.dilivp}>
               <span className={style.dilivspan}>
               diliver to {" "}

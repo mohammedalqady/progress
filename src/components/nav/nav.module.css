@@ -1,9 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .body{
     width: 100%;
     height: 130px;
@@ -20,7 +14,6 @@
     text-align: center;
 } 
  
-
 .special{
     width: 105px;
     height: 20px;
@@ -35,32 +28,39 @@
 .p1{
     font-size: 18px;
     margin-left: -5px;
+    margin-top: 15px;
 }
 
 .r0p{
+    margin-top: 19px;
     font-size: 18px;
     margin-left: 15px;
+    color: #ffffff;
 }
     
 .linRegi{
-        margin-left: 15px;
-        text-decoration: none;
-        font-size:larger ;
+    margin-top: 19px;
+    margin-left: 15px;
+    /* text-decoration: none; */
+    font-size:larger ;
+    color: #ffffff;
 }
 
 .row1 {
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
+    align-items: center;
+    margin: 2px auto;
     width: 95%;
 } 
 
 .part1{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .el1, .el2, .el3, .el4, .el5 {
-
     display: flex;
     align-items: center;
 }
@@ -69,17 +69,21 @@
     margin-left: 15px;
 }
 
-.icon1, .icon2, .icon3{
-    color: #f44321; 
+.icon1, .icon2, .icon3 {
+    color: #f44321;  
     font-size: 1.2rem;
+    margin-top: -8px;
 }
 
-p{
+.r1p{
     margin-left: 10px;
+    margin-top: 8px;
 }
 
 .part2{
     display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
   
 }
 
@@ -90,16 +94,16 @@ p{
 .el4::before {
     content: '';
     position: absolute;
-    margin: 8px 0;
+    margin: 8px 10px 15px 1px;
     left: 110%; 
     transform: translateX(-50%); 
     width: 2px;                
     height: 20px;            
-    background-color: black;  
+    background-color: rgba(0, 0, 0, 0.36);  
 }
 
 .icon4{
-    margin: 0 0 0 4px;
+    margin: 0 0 6px 6px;
 }
 
 .el5{
@@ -108,57 +112,62 @@ p{
 
 .arro1{
     font-size: 1rem;
-    margin: 0 4px;
+    margin: 5px;
     cursor: pointer;
 }
 
 .arro2{
     font-size: 1rem;
-    margin: 0 0 0 4px;
+    margin: 0 0 0 5px;
     cursor: pointer;
 }
 
 .pr{
     height: .80px;
     background-color: black;
-    margin: 10px auto;
+    margin: -10px auto;
     width: 95%;
 }
 
 .row2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px auto;
     width: 95%;
 } 
 
-.r2d1, .r2d2{
-display: flex;
-justify-content: center;
-align-items: center;
-
+.r2d1{
+    display: flex;
+    justify-content: space-between;
 }
 
 .r2icon{
-    font-size: 2rem;
-    color: #f44321;
-    align-items: center;
+    width: 40px;
 }
 
 .linkhome{
     text-decoration: none;
-    color: #000;
+    color: #f44321;
 }
 .mercado{
-    /* font-size: larger; */
     display: flex;
     align-items: center;
     font-size: 25px;
+    margin-left: 10px;    
 }
+
+.r2d2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 
 .content, .about{
     text-decoration: none;
     margin: 0 8px;
+    color: #000000;
 }
 
 .arro3{
@@ -196,7 +205,7 @@ align-items: center;
 .searchdiv{
     border-radius: 50%;
     background-color: #e6e6e6;
-    width: 46px;
+    width: 55px;
     margin-right: .4px;
     cursor: pointer;
     display: flex;
@@ -228,15 +237,22 @@ align-items: center;
     background-color: #e6e6e6;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
-.dilvericon,
+.dilvericon1{
+    color: #f44321;
+    font-size: 1.1rem;
+    margin-right: 9px;
+    margin-top: 3px;
+}
+
 .dilvericon2,
 .dilvericon3{
     color: #f44321;
     cursor: pointer;
 }
+
 
 .dilvericon2,
 .dilvericon3{
