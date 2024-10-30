@@ -1,15 +1,14 @@
 .conta{
     display: flex;
     /* justify-content: space-around; */
-    margin-top: 50px;
+    /* margin-top: 20px; */
     height: 100vh;
-    /* margin: auto; */
+    background-color: #ffffff;
 }
 
 .layout{
     width: 50%;
     text-align: center;
-    /* margin-left: 100px; */
 }
 
 .d1{
@@ -25,6 +24,7 @@
 .mercado{
     font-size: 30px;
     padding-top: 18px;
+    color: #f44321;
 }
 
 .welcom{
@@ -37,7 +37,49 @@
     color: #aeadad;
 }
 
+.dinp1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
 
+.label1{
+    margin: 0 0 0 -295px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.input1{
+    width: 470px;
+    height: 58px;
+    padding: 10px;
+    margin: 10px 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 17px;
+    font-size: 17px;
+    font-weight: 700;
+    box-shadow: 2.88px 2.88px 1.88px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+.input1:hover{
+    box-shadow: 2.88px 2.88px 1.88px rgba(0, 0, 0, 0.6);
+}
+
+
+.label2{
+    margin: 0 0 0 -395px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.passicon{
+    /* position: relative; */
+    width: 5px;
+    border: none;
+    background-color: #ffffff;
+    margin-top: -53px;
+    margin-left: 480px;
+}
 
 .im{
     /* display: flex; */

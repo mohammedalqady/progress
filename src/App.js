@@ -35,16 +35,16 @@ function App() {
     :
     <BrowserRouter>
       <ProductProvider>
-        <NavBarLogIn />
+      {window.location.pathname !== '/login' && <NavBarLogIn />}
         <Routes>
           <Route path="/" index element={<HomePage />} />
-          <Route path="/signin" element={<SignIn />} />
+          <Route path="/login" element={<SignIn />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product-details/:id" element={<ProductDetailsPage />} />
         </Routes>
-        <Foter />
+        {window.location.pathname !== '/login' && <Foter />}
       </ProductProvider>
     </BrowserRouter>
     }

@@ -29,7 +29,7 @@ const NavBarLogIn = () => {
            Get 10% <span>DISCOUNT</span> for first order
          </p>
         </div>
-         <Link to='/signin' className={style.linRegi}><p>Register Now</p></Link>
+         <Link to='/login' className={style.linRegi}><p>Register Now</p></Link>
       </div>
 
       <div className={style.row1}>
