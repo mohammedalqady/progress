@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from './pages/home/HomePage';
 import NavBarLogIn from './components/nav/NavBarLogIn';
 import Foter from './components/foter/Foter';
@@ -35,7 +35,10 @@ function App() {
     :
     <BrowserRouter>
       <ProductProvider>
-      {window.location.pathname !== '/login' && <NavBarLogIn />}
+      <>
+        {window.location.pathname !== '/login' && <NavBarLogIn />}
+      </>
+      
         <Routes>
           <Route path="/" index element={<HomePage />} />
           <Route path="/login" element={<SignIn />} />
